@@ -1,0 +1,1549 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+
+
+/* Base styling for the text */
+.home__data h5.galactic-games {
+  color: #fff;
+  font-size: 6.5rem;
+  margin-bottom: 10px;
+}
+
+.home__data h1.space-champion {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
+
+
+.travel__descrip {
+  font-size: 1.2em; /* Increase the font size for readability */
+  font-family: 'Poppins', sans-serif; /* Use a modern, stylish font */
+  line-height: 1.6; /* Improve readability with good line spacing */
+  font-weight: 400; /* Regular weight for body text */
+  color: #007bff; /* Bright blue color to make the text stand out */
+  margin-top: 10px; /* Add some spacing */
+}
+
+.travel__descrip strong {
+  font-size: 1.3em; /* Increase font size for emphasis */
+  font-weight: 700; /* Make the "Toolkit" label bold */
+  color: #0056b3; /* Darker blue for contrast */
+}
+
+
+
+
+/* Hover effect (or touch interaction on mobile) */
+.home__data h5.galactic-games:hover,
+.home__data h5.galactic-games:focus,
+.home__data h1.space-champion:hover,
+.home__data h1.space-champion:focus {
+  color: #f4e842; /* Change the text color on hover */
+  cursor: pointer; /* Change the cursor to pointer to indicate interactivity */
+  transition: color 0.3s ease-in-out; /* Smooth transition for the color change */
+}
+
+.travel__description strong {
+  font-size: 1.3em; /* Make the "Toolkit:" label slightly larger */
+  font-weight: 700; /* Bold the "Toolkit:" label */
+  color: #ff6600; /* Make the label stand out with a bright color */
+}
+
+
+/* Style for the main heading */
+/* Style for the main heading */
+/* Style for the main heading */
+.main-heading {
+  text-align: center;
+  font-size: 4em; /* Large size for prominence */
+  font-weight: 900; /* Bold for readability */
+  color: #ff6600; /* Bright orange for visibility */
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-family: 'Poppins', sans-serif; /* Stylish and readable font */
+  letter-spacing: 2px; /* Space out the letters for clarity */
+
+  /* Add text shadow for better readability */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
+.home__data h5 {
+  margin-top: -10px; /* Adjust this value to move it higher */
+  opacity: 0; /* Start hidden */
+  transform: translateY(-20px); /* Start above */
+  animation: fadeInUp 0.6s ease forwards; /* Fade and slide in effect */
+  animation-delay: 0.3s; /* Delay for sequential animation */
+}
+/* General Styles for the History Section */
+.history {
+  background-color: hsla(238, 50%, 20%, 0.4); /* Applying the specified background color */
+  color: #e0e0e0; /* Light text color for contrast */
+  padding: 60px 0; /* Add padding for spacing */
+  position: relative; /* To properly position any absolute elements within */
+}
+
+/* Section Title Styles */
+.section__title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.section__title span {
+  color: #fff200; /* Bright color for emphasis */
+  text-shadow: 0 0 10px rgba(255, 242, 0, 0.8); /* Glow effect */
+}
+
+/* Planet Images */
+.history__planet-1, .history__planet-2 {
+  position: absolute; /* Position for overlap */
+  width: 200px; /* Adjust size */
+  animation: float 3s infinite alternate; /* Floating animation */
+}
+
+
+.history__planet-1 {
+  top: 10%;
+  left: 10%;
+}
+
+.history__planet-2 {
+  bottom: 10%;
+  right: 10%;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-15px); }
+}
+
+/* History Cards Container */
+.history__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between cards */
+  padding: 0 20px; /* Padding on sides */
+}
+
+/* History Card Styles */
+.history__card {
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  border-radius: 15px; /* Rounded corners */
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+  position: relative; /* Position for pseudo-elements */
+  overflow: hidden; /* Hide overflow for pseudo-elements */
+}
+
+.history__img {
+  max-width: 100%; /* Responsive image */
+  border-radius: 10px; /* Rounded corners */
+}
+
+
+
+
+
+/* Contact Section Styles */
+.contact {
+  background-color: hsla(238, 50%, 20%, 0.4); /* Same background as history section */
+  padding: 60px 0; /* Padding for spacing */
+  position: relative; /* Positioning for animations */
+}
+
+/* Centering the Contact Title */
+.contact__title {
+  font-size: 2.5rem; /* Font size */
+  text-align: center; /* Center alignment */
+  margin-bottom: 40px; /* Margin below */
+  color: #ffffff; /* Text color */
+  animation: fadeIn 1.5s ease-in-out; /* Animation */
+}
+
+/* Input and Button Styles */
+.contact__form {
+  display: flex; /* Flexbox for layout */
+  justify-content: center; /* Center the form */
+  align-items: center; /* Center vertically */
+  flex-direction: column; /* Column layout */
+}
+
+.contact__input {
+  width: 100%; /* Full width */
+  max-width: 400px; /* Max width for input */
+  padding: 15px; /* Padding for input */
+  margin-bottom: 20px; /* Margin between input and button */
+  border: none; /* Remove border */
+  border-radius: 8px; /* Rounded corners */
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  color: #fff; /* Text color */
+  font-size: 1rem; /* Font size */
+  transition: background 0.3s; /* Transition for background */
+}
+
+
+
+
+
+/* Footer Styles */
+.footer {
+  background-color: hsla(238, 50%, 20%, 0.8); /* Dark background */
+  padding: 40px 0; /* Padding */
+  color: #fff; /* Text color */
+  position: relative; /* For absolute positioning of child elements */
+  overflow: hidden; /* Hide overflow */
+}
+
+/* Footer Links Styles */
+.footer__links {
+  display: flex; /* Horizontal layout */
+  justify-content: center; /* Center the links */
+  margin-bottom: 20px; /* Margin below links */
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+}
+
+.footer__link {
+  color: #fff; /* Link color */
+  text-decoration: none; /* Remove underline */
+  margin: 0 15px; /* Margin between links */
+  font-size: 1.2rem; /* Font size */
+  transition: transform 0.3s ease, color 0.3s ease; /* Transition for scale and color */
+}
+
+/* Link Hover Effects */
+.footer__link:hover {
+  transform: scale(1.1); /* Scale up on hover */
+  color: #ffcc00; /* Change color on hover */
+}
+
+/* About Section Styles */
+.about {
+  text-align: center; /* Center text */
+  animation: fadeIn 1s ease-in-out; /* Fade in animation */
+  opacity: 0; /* Start invisible */
+  transform: translateY(20px); /* Start slightly lower */
+  animation-fill-mode: forwards; /* Retain final state */
+  animation-delay: 0.5s; /* Delay for smooth appearance */
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Model Viewer Animation */
+#model-container {
+  margin: 20px 0; /* Margin above and below */
+  animation: fadeIn 1s ease-in-out; /* Fade in animation */
+  animation-fill-mode: forwards; /* Retain final state */
+  opacity: 0; /* Start invisible */
+  animation-delay: 0.5s; /* Delay for smooth appearance */
+}
+
+/* Add a hover effect for the model viewer */
+model-viewer {
+  transition: transform 0.3s ease; /* Smooth scaling */
+}
+
+model-viewer:hover {
+  transform: scale(1.05); /* Scale slightly on hover */
+}
+
+/* Footer Copy Styles */
+.footer__copy {
+  text-align: center; /* Center the copyright text */
+  margin-top: 20px; /* Margin above copyright */
+  font-size: 0.9rem; /* Font size */
+  animation: fadeIn 1s ease-in-out; /* Fade in animation */
+  opacity: 0; /* Start invisible */
+  animation-fill-mode: forwards; /* Retain final state */
+  animation-delay: 0.5s; /* Delay for smooth appearance */
+}
+
+/* Add background stars animation */
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('images/stars-background.png') repeat; /* Add star background image */
+  opacity: 0.1; /* Slightly transparent */
+  animation: twinkle 3s infinite alternate; /* Twinkle animation */
+}
+
+@keyframes twinkle {
+  0% {
+      opacity: 0.05;
+  }
+  100% {
+      opacity: 0.1;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Button Styles */
+.button {
+  padding: 15px 30px; /* Padding for button */
+  background-color: #ffcc00; /* Button color */
+  border: none; /* Remove border */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 1rem; /* Font size */
+  cursor: pointer; /* Pointer on hover */
+  transition: transform 0.3s ease, background 0.3s ease; /* Transition for button */
+}
+
+/* Button Hover Effects */
+.button:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+  background-color: #e6b800; /* Darken background on hover */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px); /* Start above */
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0); /* End at normal position */
+  }
+}
+
+
+
+
+
+
+/* Card Hover Effects */
+.history__card:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+/* Pseudo-element for Background Effect */
+.history__card::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 242, 0, 0.1); /* Light glow */
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.3s;
+}
+
+.history__card:hover::before {
+  transform: translate(-50%, -50%) scale(1); /* Scale effect on hover */
+}
+
+/* Description Styles */
+.history__description {
+  margin-top: 15px;
+  font-size: 1.2rem; /* Font size */
+  line-height: 1.5; /* Line height for readability */
+}
+
+
+
+
+
+
+
+
+/* Home Section Styles */
+.home {
+  position: relative; /* Position relative for absolute children */
+  overflow: hidden; /* Hide overflow for background */
+  padding: 60px 0; /* Padding for top and bottom */
+  color: #fff; /* White text color */
+  text-align: center; /* Center text */
+}
+
+.home__bg {
+  position: absolute; /* Position absolute for background image */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  object-fit: cover; /* Cover the section */
+  z-index: 1; /* Background layer */
+  animation: fadeIn 2s; /* Fade in animation */
+}
+
+.home__container {
+  position: relative; /* Position relative for content */
+  z-index: 2; /* Content layer above background */
+  display: grid; /* Grid layout */
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  align-items: center; /* Center vertically */
+  max-width: 1200px; /* Max width */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Padding on sides */
+}
+
+.home__data {
+  text-align: left; /* Align text to the left */
+}
+
+.home__data h5 {
+  font-size: 7.5rem; /* Smaller heading size */
+  margin-bottom: 10px; /* Space below */
+}
+
+.home__data h1 {
+  font-size: 2.5rem; /* Large heading size */
+  margin-bottom: 20px; /* Space below */
+  animation: slideIn 1s; /* Slide in animation */
+}
+
+.home__ovni {
+  width: 150px; /* Set size for UFO image */
+  position: relative; /* Position relative for UFO */
+  animation: bounce 2s infinite; /* Bounce animation */
+}
+
+.home__img {
+  width: 100%; /* Full width for the main image */
+  max-width: 400px; /* Max width */
+  animation: zoomIn 1s; /* Zoom-in animation */
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  from {
+      opacity: 0; /* Start transparent */
+  }
+  to {
+      opacity: 1; /* End fully opaque */
+  }
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateX(-50px); /* Start from left */
+      opacity: 0; /* Start transparent */
+  }
+  to {
+      transform: translateX(0); /* End at original position */
+      opacity: 1; /* End fully opaque */
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0); /* Original position */
+  }
+  40% {
+      transform: translateY(-20px); /* Bounce up */
+  }
+  60% {
+      transform: translateY(-10px); /* Bounce slightly down */
+  }
+}
+
+@keyframes zoomIn {
+  from {
+      transform: scale(0.8); /* Start small */
+      opacity: 0; /* Start transparent */
+  }
+  to {
+      transform: scale(1); /* End at original size */
+      opacity: 1; /* End fully opaque */
+  }
+}
+
+/* Footer Styles */
+.footer {
+  background: rgba(0, 0, 0, 0.8); /* Dark background for footer */
+  padding: 20px 0; /* Padding for top and bottom */
+  text-align: center; /* Center text */
+  color: #ffffff; /* White text color */
+}
+
+.footer__container {
+  max-width: 1200px; /* Max width */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Padding on sides */
+}
+
+.footer__copy {
+  font-size: 1rem; /* Font size for footer text */
+}
+
+
+
+
+h5 {
+  font-size: 9vw;
+  color: white;
+   /* Responsive to the viewport width */
+}
+.req {
+  text-align: right;
+  margin-left: 0; /* Ensures it's flush to the left */
+}
+
+.req-title {
+  font-size: 30px;
+}
+
+.about {
+  max-width: 800px; /* Limit the width of the content */
+  margin: 50px auto; /* Center align the container */
+  padding: 40px; /* Add padding around the content */
+  background-color: rgba(30, 30, 60, 0.8); /* Semi-transparent background */
+  border-radius: 10px; /* Rounded corners for smooth look */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  text-align: center; /* Center-align the text */
+}
+
+.about h1 {
+  font-size: 2.5rem; /* Increase font size for the heading */
+  margin-bottom: 20px; /* Space below the heading */
+  color: #FFD700; /* Gold color for the heading */
+}
+
+.about p {
+  font-size: 1.2rem; /* Increase font size for better readability */
+  line-height: 1.6; /* Improve line spacing */
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3); /* Soft white shadow for brightness */
+}
+
+/* Add a footer for credits or additional links */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  margin-top: 40px; /* Space above the footer */
+}
+
+.footer span {
+  font-size: 0.9rem; /* Smaller font size for the footer */
+}
+
+
+.cont {
+  display: flex;
+  align-items: center;      /* Vertically aligns the items */
+  justify-content: flex-start; /* Ensures the 3D model stays on the left */
+}
+
+.req {
+  margin-left: 20px;         /* Space between the 3D model and the text */
+  text-align: left;          /* Ensures the text is left-aligned */
+}
+
+.req-title {
+  font-size: 30px;           /* Custom font size for the title */
+  margin-bottom: 10px;       /* Adds spacing between the title and the paragraphs */
+}
+
+.how-to-play {
+  padding-left: 20px; /* Adds padding to the left to align the text */
+}
+
+.how-to-play p {
+  margin-left: 0; /* Removes any default margin */
+  text-indent: 0; /* Ensures the text is aligned properly */
+  line-height: 1.5em; /* Optional: Adds some line height for better readability */
+}
+
+.how-to-play .travel__info {
+  display: block;
+  margin-bottom: 10px; /* Adds some space between the title and the paragraphs */
+  font-weight: bold;   /* Makes the title bold */
+}
+
+
+
+
+
+
+
+@media (min-width: 2768px) {
+  h5 {
+      font-size: 3rem;
+      padding-top: 0;
+      margin-top: 0;
+      
+      
+
+       /* Use rem for larger screens */
+  }
+  }
+  .nav.container {
+    width: 100vw;  /* Full width of the viewport */
+    max-width: 100%;  /* Ensure it doesn't shrink below 100% */
+    padding: 0;  /* Remove any default padding */
+    margin: 0;   /* Remove any default margin */
+}
+
+
+.about {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+h1 {
+  
+  font-size: 3rem; /* Increase font size, adjust as needed */
+  font-weight: bold; /* Make it bold */
+  color: #5b5454; /* Set the text color */
+  margin: 1rem 0; /* Adjust margins for spacing */
+  line-height: 1.2; /* Set line height for better readability */
+  text-align: center; /* Center the text, optional */
+}
+
+
+
+#model-container {
+  display: flex; /* Make the container a flex container */
+  justify-content: center; /* Center the model-viewer horizontally */
+  align-items: center; /* Center the model-viewer vertically */
+  width: 100%; /* Full width of the parent */
+  height: 600px;
+}
+
+#model-containerr {
+  display: flex; /* Make the container a flex container */
+  justify-content: center; /* Center the model-viewer horizontally */
+  align-items: center; /* Center the model-viewer vertically */
+  width: 100%; /* Full width of the parent */
+  height: 600px;
+}
+
+#model-containerrr {
+    display: flex; /* Make the container a flex container */
+    justify-content: center; /* Center the model-viewer horizontally */
+    align-items: center; /* Center the model-viewer vertically */
+    width: 100%; /* Full width of the parent */
+    height: 600px;
+            }
+
+            #model-containerrrr {
+              display: flex; /* Make the container a flex container */
+              justify-content: center; /* Center the model-viewer horizontally */
+              align-items: center; /* Center the model-viewer vertically */
+              width: 100%; /* Full width of the parent */
+              height: 600px;
+                      }
+
+                      
+                    
+          
+
+
+
+.moo {
+  display: flex;                /* Use flexbox for the inner div */
+  justify-content: center;      /* Center the model-viewer horizontally */
+  align-items: center;          /* Center the model-viewer vertically */
+  height: 100%;                 /* Fill the full height of the travel card */
+  width: 100%;                  /* Fill the full width of the travel card */
+}
+
+
+
+#threedd{
+  width:1000px;
+  height: 900px;
+  margin-left: 130px;
+}
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(238, 100%, 70%);
+  --first-gradient: linear-gradient(90deg,
+                  hsl(243, 96%, 54%),
+                  hsl(296, 78%, 53%));
+  --second-gradient: linear-gradient(90deg,
+                  hsl(192, 94%, 49%),
+                  hsl(224, 98%, 51%));
+  --third-gradient: linear-gradient(90deg,
+                  hsl(25, 96%, 55%),
+                  hsl(34, 93%, 53%));
+  --white-color: hsl(0, 0%, 100%);
+  --text-color: hsl(0, 0%, 75%);
+  --text-color-light: hsl(0, 0%, 55%);
+  --border-color: hsl(0, 0%, 45%);
+  --body-color: hsl(238, 100%, 12%);
+  --body-color-light: hsl(238, 60%, 20%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Poppins", sans-serif;
+  --second-font: "Audiowide", sans-serif;
+  --biggest-font-size: 3rem;
+  --big-font-size: 1.5rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1150px) {
+  :root {
+    --biggest-font-size: 5.5rem;
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+input,
+button {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+h1, h2, h3, h4 {
+  color: var(--white-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1000px;
+  margin-inline: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 5rem 1rem;
+}
+
+.section__title {
+  font-size: var(--big-font-size);
+  font-family: var(--second-font);
+  font-weight: initial;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.section__title span {
+  display: block;
+  background: var(--third-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.main {
+  overflow: hidden;
+}
+
+/*=============== HEADER & NAV ===============*/
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left:0;
+    background-color: transparent;
+    z-index: var(--z-fixed);
+}
+.nav{
+     background-color: #0a0a23; /* Replace this with your preferred color */
+     padding: 10px 20px;
+     width: 100%;
+    position: relative;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo{
+    display: inline-flex;
+    align-items: center;
+    column-gap: .25rem;
+    color: var(--white-color);
+    font-weight: var(--font-semi-bold);
+}
+.nav__logo img{
+    width: 1.5rem;
+}
+.nav__toggle,
+.nav__close{
+    display: inline-flex;
+    font-size: 1.5rem;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.nav__menu{
+    position: fixed;
+    top: 0;
+    right:-100%;
+    background-color: hsla(238, 100%, 6%,.5);
+    backdrop-filter: blur(16px);
+    --webkit-backdrop-filter:blur(16px);
+    width: 80%;
+    height: 100%;
+    padding: 8rem 3.5rem 3.5rem;
+    transition: right .4s;
+}
+
+.nav__list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+.nav__link{
+    color: var(--white-color);
+    font-size: var(--h2-font-size);
+    font-family: var(--second-font);
+    transition: color .4s;
+}
+
+.nav__link:hover{
+    color: var(--first-color);
+}
+
+.nav__img,
+.nav__close{
+    position: absolute;
+}
+
+.nav__close{
+    top: 1rem;
+    right: 1.5rem;
+}
+.nav__img{
+    width: 300px;
+    right: -3rem;
+    bottom: 5rem;
+    z-index: -1;
+}
+
+/* Show menu */
+.show-menu{
+    right:0;
+}
+/* Add blur header */
+.blur-header::after{
+    content: '';
+    position: absolute;
+    width: 1000%;
+    height: 100%;
+    background-color: hsla(238, 100%, 6%,.5);
+    backdrop-filter: blur(16px);
+    --webkit-backdrop-filter:blur(16px);
+    top:0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Active link */
+.active-link{
+  color: var(--first-color);
+}
+
+/*=============== HOME ===============*/
+.home{
+    position: relative;
+}
+.home__bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.home__container{
+  margin: 0;
+  padding: 0;
+    position: relative;
+    row-gap: 3rem;
+    padding-top: 3rem;
+}
+.home__data{
+    position: relative;
+    text-align: center;
+}
+.home__title span{
+  display: block;
+}
+
+.home__title{
+    font-size: var(--biggest-font-size);
+    font-family: var(--second-font);
+    font-weight:initial;
+    margin-bottom: 1.5rem;
+}
+
+.home__title span:nth-child(1){
+    background: var(--third-gradient);
+    background-clip: text;
+    --webkit-background-clip:text;
+    color: transparent;
+}
+.home__title span:nth-child(3){
+    background: var(--second-gradient);
+    background-clip: text;
+    --webkit-background-clip:text;
+    color: transparent;
+}
+.home__ovni{
+    width: 50px;
+    position: absolute;
+    top: 4rem;
+    right: -1rem;
+    transform: rotateY(180deg);
+}
+.home__img{
+    width: 320px;
+    justify-self: center;
+}
+/*=============== BUTTON ===============*/
+.button{
+     margin-top: 20px;
+    display: inline-flex;
+    justify-content: center;
+    background: var(--first-gradient);
+    color: var(--white-color);
+    font-weight: var(--font-semi-bold);
+    padding: 1rem 2rem;
+    transition: box-shadow .4s;
+}
+
+.button:hover{
+    box-shadow:0 8px 32px hsla(243, 100%, 54%,.4);
+}
+.button__yellow{
+    background: var(--third-gradient);
+}
+.button__yellow:hover{
+    box-shadow: 0 8px 32px hsla(25, 96%, 55%,.4);
+}
+/*=============== TRAVEL ===============*/
+.travel{
+  position: relative;
+}
+
+.travel__lines{
+  max-width: initial;
+  width: 550px;
+  position: absolute;
+  top: 4rem;
+  left: 0;
+}
+
+.travel__container{
+  position: relative;
+  background-color: hsla(238, 50%, 20%,.4);
+  backdrop-filter:blur(16px);
+  --webkit-backdrop-filter:blur(16px);
+  padding:2rem 2rem 5rem;
+}
+
+.travel__swiper{
+  padding-top: 3rem;
+}
+.travel__card{
+  position: relative;
+  border: 2px solid;
+  border-image:var(--second-gradient) 1;
+  background: linear-gradient(hsla(243,98,51%,.3),transparent 50%);
+  padding: 9.25rem 1rem 3rem;
+  text-align: center;
+
+}
+
+.travel__img{
+  width: 180px;
+  position:absolute;
+  top:-3rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+ transform: rotate(-90deg);
+ transition: transform .6s;
+}
+
+.travel__title{
+  font-size: var(--h2-font-size);
+}
+.travel__info{
+  display: block;
+  color: var(--first-color);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 1rem;
+}
+.travel__description{
+  font-size: var(--small-font-size);
+}
+
+
+
+
+
+
+
+
+
+
+/* Swiper class */
+.swiper-pagination-bullets .swiper-pagination-horizontal{
+  bottom: 2rem;
+}
+.swiper-pagination-bullet{
+  width: 1rem;
+  height: 1rem;
+  opacity: 1;
+  border: 2px solid var(--border-color);
+  background: transparent;
+}
+.swiper-pagination-bullet-active{
+  border:2px solid transparent;
+  background: linear-gradient(var(--body-color),var(--body-color)) padding-box,
+              linear-gradient(135deg,hsl(25,96%,55%)0%,hsl(34,93%,53%)100%)border-box;
+  position: relative;
+}
+
+.swiper-pagination-bullet-active::after{
+  content: '';
+  position: absolute;
+   width: .5rem;
+  height: .5rem;
+  background: var(--third-gradient);
+  border-radius: 50%;
+  inset: 0;
+  margin: auto;
+
+}
+/* Swiper animation */
+
+.swiper-slide-active .travel__img{
+  transform: rotate(0);
+}
+/*=============== EXPLORE ===============*/
+.explore__container{
+  row-gap: 3rem;
+}
+.explore__data{
+  position: relative;
+}
+.explore__planet{
+  width: 50px;
+  position: absolute;
+  top: 3rem;
+  right: 0;
+}
+.explore__decription{
+  text-align: center;
+  margin-bottom:2rem;
+}
+.explore__info{
+  display: flex;
+  justify-content: center;
+  column-gap:3rem;
+}
+ .explore__info-title{
+  font-size: var(--normal-font-size);
+ }
+ .explore__info-number{
+  font-size: var(--h1-font-size);
+  font-family:var(--second-font);
+  background: var(--second-gradient);
+  background-clip: text;
+  --webkit-background-clip:text;
+  color:transparent;
+ }
+ .explore__info-number span{
+  font-size: var(--small-font-size);
+ }
+
+ .explore__img{
+  width: 320px;
+  justify-content: center;
+ }
+/*=============== HISTORY ===============*/
+.history{
+  position: relative;
+}
+
+.history__container{
+  position: relative;
+  row-gap: 2.5rem;
+  grid-template-columns: 265px;
+  justify-content: center;
+}
+.history__card{
+  text-align: center;
+}
+.history__img{
+  width: 150px;
+  margin: 0 auto .75rem;
+}
+.history__description{
+  color:var(--first-color);
+  font-weight: var(--font-semi-bold);
+}
+
+.history__planet-1,
+.history__planet-2{
+  position: absolute;
+}
+
+.history__planet-1{
+  width: 250px;
+  top:10rem;
+  left: -8rem;
+}
+
+.history__planet-2{
+  width:150px;
+  right:-5rem;
+  bottom:6rem;
+}
+
+
+
+
+/*=============== CONTACT ===============*/
+.contact__conatainer{
+  padding-bottom:2rem;
+}
+ .contact__form{
+  display: grid;
+  row-gap: 1rem;
+ }
+
+ .contact__input{
+  width: 100%;
+  background-color: var(--body-color);
+  border: 2px solid var(--border-color);
+  padding: 1rem;
+  color: var(--white-color);
+ }
+
+ .contact__form button{
+  cursor: pointer;
+ }
+/*=============== FOOTER ===============*/
+.footer{
+  overflow: hidden;
+}
+.footer__container{
+  position: relative;
+  row-gap: 4.5rem;
+  padding-block: 2rem;
+}
+
+.footer__planet-1,
+.footer__planet-2{
+  position: absolute;
+}
+
+.footer__planet-1{
+  width: 200px;
+  left:-6.5rem;
+  bottom:-4.5rem;
+}
+
+.footer__planet-2{
+  width: 50px;
+  top:5.5rem;
+  right: 0;
+}
+.footer__content{
+  row-gap: 2.5rem;
+}
+.footer__links{
+  display: flex;
+  column-gap:2rem;
+  justify-content: center;
+
+}
+
+.footer__links{
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+  transition: color .4s;
+}
+.footer__links:hover{
+  color: var(--first-color);
+}
+
+.footer__social{
+  display: flex;
+  column-gap: 1rem;
+  justify-content: center;
+}
+.footer__social-links{
+  display:inline-flex;
+  background: var(--third-gradient);
+  color: var(--white-color);
+  font-size:1.5rem;
+  padding: .25rem;
+  transition: box-shadow .4s;
+}
+
+.footer__social-links:hover{
+  box-shadow: 0 8px 32px hsla(25, 96%, 55%,.6);
+}
+.footer__copy{
+  text-align: center;
+  z-index: var(--z-tooltip);
+  color: var(--white-color);
+  font-size: var(--small-font-size);
+}
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar{
+  width: .6rem;
+  background-color: hsl(238, 60%, 20%);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: hsl(238, 50%, 30%);
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: hsl(238,40, 40);
+}
+/*=============== SCROLL UP ===============*/
+.scrollup{
+  position: fixed;
+  right: 1rem;
+  bottom: 3rem;
+  bottom:-50%;
+  background-color: var(--body-color-light);
+  box-shadow: 0 8px 24px hsla(238, 60%, 4%,.6);
+  display: inline-flex;
+  padding: 6px;
+  color:var(--white-color);
+  font-size: 1.25rem;
+  z-index:var(--z-tooltip);
+  transition: bottom .4s, transform .4s;
+}
+.scrollup:hover{
+  transform:translateY(-.5rem);
+}
+/* Show Scroll Up */
+.show-scroll{
+  bottom: 3rem;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and(max-width:340px){
+  .container{
+    margin-inline:1rem;
+  }
+  .home__title{
+    font-size: 2.5rem;
+  }
+  .travel__container{
+    padding-inline: 1rem;
+    overflow:hidden;
+  }
+  .explore__info{
+    flex-direction: column;
+    row-gap: 1rem;
+    text-align: center;
+  }
+}
+
+/* For medium devices */
+@media screen and(min-width:540px) {
+  .home__container,
+  .explore__container{
+    grid-template-columns: 350px;
+    justify-content: center;
+  }
+
+  .travel__card{
+    width: 265px;
+  }
+  
+}
+@media screen and (min-width:768px) {
+  .home__container,
+  .explore__container{
+    grid-template-columns: repeat(2,350px);
+    align-items: center;
+  }
+  .home__data,.explore__data,.explore__decription{
+    text-align: initial;
+  }
+  
+  .explore__info{
+    justify-content: initial;
+  }
+  .explore__img{
+    order: -1;
+  }
+  .history__container{
+    grid-template-columns: repeat(2,265px);
+  }
+  .nav{
+    margin: 0 auto;
+  }
+  .contact__form{
+    width: 600px;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    column-gap: 1rem;
+    border:2px solid var(--border-color);
+    padding: 1rem 1rem 1rem 1.5rem;
+  }
+  .contact__input{
+    border: none;
+    padding: 0;
+    
+    }
+  
+}
+
+/* For large devices */
+@media screen and (min-width:1150px) {
+.container{
+  margin-inline:auto;
+}
+.section{
+  padding-block: 7rem 2rem;
+}
+.section__title{
+  margin-bottom:3rem;
+ 
+}
+.nav{
+  height: calc(var(--header-height)+2rem);
+  margin: 0 auto;
+}
+.nav__logo img{
+  width: 3rem;
+}
+.nav__toggle,
+.nav__close{
+font-size: 2rem;
+}
+.nav__menu{
+  width: 40%;
+  padding: 10rem 4.5rem 0;
+}
+.nav__list{
+  row-gap: 3.5rem;
+}
+.nav__close{
+  top:1.7rem;
+}
+.nav__img{
+  width: 400px;
+  right: -4rem;
+}
+.home__container{
+  grid-template-columns: 540px 550px;
+  column-gap: 2rem;
+}
+.home__title{
+  margin-bottom: 3rem;
+}
+.home__ovni{
+  width: 100px;
+  top: 10rem;
+  right: 1.5rem;
+}
+.home__img{
+  width: 550px;
+}
+.travel__lines{
+  width: 800px;
+}
+.travel__container{
+  padding: 3.5rem 3.5rem 7.5rem;
+}
+.travel__container .section__title{
+  text-align: initial;
+}
+
+.travel__swiper{
+  box-sizing: border-box; /* Padding and borders are included in the width and height */
+  width: 100%;            /* Container takes up full width */
+  padding: 20px;          /* Padding inside the container */
+  border: 1px solid #000;
+}
+.travel__card{
+  padding-top: 0rem;
+}
+.travel__img{
+  width: 200px;
+}
+.travel__info{
+  margin-bottom: 1.5rem;
+}
+.travel__description{
+  font-size: var(--normal-font-size);
+}
+
+.swiper-pagination-bullets .swiper-pagination-horizontal{
+  bottom: 3rem;
+}
+
+.explore__container{
+  grid-template-columns: 550px 480px;
+  column-gap: 2rem;
+}
+
+.explore__img{
+  width: 550px;
+}
+
+.explore__data .section__title{
+  margin-bottom: 1.5rem;
+}
+
+.explore__decription{
+  margin-bottom: 3rem;
+}
+.explore__planet{
+  width: 100px;
+  right: -4rem;
+}
+.history__container{
+  grid-template-columns: repeat(3,265px);
+  column-gap: 5rem;
+}
+.history__img{
+  width: 200px;
+  margin-bottom: 1rem;
+}
+.history__planet-1{
+  width: 500px;
+  left: -15rem;
+}
+.history__planet-2{
+  width: 300px;
+  right: -8rem;
+  bottom:10rem;
+}
+.history .section__title{
+  align-items: center;
+}
+
+.footer__container{
+  padding-block: 4rem 3rem;
+}
+.footer__links{
+  column-gap:4rem;
+}
+.footer__social{
+  column-gap: 1.5rem;
+}
+.footer__planet-1{
+  width: 400px;
+  bottom: -12rem;
+}
+.footer__planet-2{
+  width: 150px;
+}
+.scrollup{
+  right: 3rem;
+}
+
+}

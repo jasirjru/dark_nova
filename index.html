@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="assest/swiper-bundle.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="style.css">
+
+
+      <title>DarkNova</title>
+   </head>
+   <style>
+
+
+   
+          .floating-image {
+             position: fixed;
+             width: 200px;
+             height: auto;
+             animation: float 5s ease-in-out infinite;
+           }
+    
+           .floating-left {
+             left: -100px;
+             top: 20%;
+           }
+    
+           .floating-right {
+             right: -100px;
+             top: 40%;
+           }
+    
+           @keyframes float {
+             0% {
+               transform: translateY(0);
+             }
+             50% {
+               transform: translateY(30px);
+             }
+             100% {
+               transform: translateY(0);
+             }
+           }
+           </style>
+   <body>
+   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="images/logo.svg" alt="images" style="width: 80px; height: 80px;">>
+                Dark Nova
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#travel" class="nav__link">Games</a>
+                    </li>
+                    <li>
+                        <a href="#explore" class="nav__link">Exploration</a>
+                    </li>
+                    <li>
+                        <a href="#history" class="nav__link">History</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-large-line"></i>
+                </div>
+                <img src="images/nav-comet.svg" alt="image" class="nav__img">
+            </div>
+<div class="nav__toggle" id="nav-toggle">
+   
+</div>
+
+        </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         
+         <section class="home section" id="home">
+            <img src="images/home-bg.svg" alt="images" class="home__bg">
+            <div class="home__container container grid">
+                
+                <div class="home__data">
+                    <h5 class="galactic-games">Galactic Games</h5>
+                    <h1 class="space-champion">Unleash Your Inner Space Champion!</h1>
+                    <img src="images/home-ovni.svg" alt="images" class="home__ovni">
+                 </div>
+                 
+                 <img src="images/home-img.png" alt="image" class="home__img">
+                 
+
+         </section>
+
+         <!--==================== TRAVEL ====================-->
+         <section class="travel section" id="travel">
+            <img src="images/travel-lines.svg" alt="images" class="travel__img">
+            <div class="travel__container container">
+                <h2 class="section__title">
+                    GALACTIC <span>GAME LIST</span>
+                </h2>
+        
+                <!-- First Game Card -->
+                <div class="travel__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <article class="travel__card swiper-slide">
+                            <h1 class="main-heading">Zero'G'ames Kit</h1>
+                            <div id="model-containerrrr">
+                                <model-viewer
+                                    src="./box123.glb"
+                                    alt="A 3D dice"
+                                    auto-rotate
+                                    camera-controls
+                                    shadow-intensity="1"
+                                    environment-image="neutral"
+                                    ar
+                                    style="width: 600px; height: 600px;">
+                                </model-viewer>
+                            </div>
+        
+
+                            <h2 class="travel__title">This kit is the perfect way to present and enjoy a variety of games</h2>
+                            <span class="travel__info">Thoughtfully designed box maximizes space utilization, ensuring that every component fits perfectly while keeping the spirit of fun alive. Each item is easily accessible for a fantastic gaming experience.</span>
+        
+                            <p class="travel__descrip">
+                                <strong>Toolkit:</strong><br>
+                                • Multiple Game Boards<br>
+                                • Magnetic Dice and Darts<br>
+                                • Spin-A-Bottle<br>
+                                • Dart Board<br>
+                                • Battery Pack<br>
+                                • Mini-Notepad with Space Pen<br>
+                            </p>
+                        </article>
+                    </div>
+                </div>
+        
+                <!-- Second Game Card -->
+                <div class="travel__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <article class="travel__card swiper-slide">
+                            <div id="model-container">
+                                <model-viewer
+                                    src="./cube-final.glb"
+                                    alt="A 3D dice"
+                                    auto-rotate
+                                    camera-controls
+                                    shadow-intensity="1"
+                                    environment-image="neutral"
+                                    ar
+                                    style="width: 600px; height: 600px;">
+                                </model-viewer>
+                            </div>
+        
+                            <h2 class="travel__title">MAGNETIC DICE</h2>
+                            <span class="travel__info">Aim True, Stick with Magnetic Precision!</span>
+                            <p class="travel__description">
+                                "Magnetic Dice" is an interactive, space-themed dice game that combines elements of strategy, luck, and fun. Players navigate through various galactic scenarios, using magnetic dice to influence the outcomes of their adventures. The game can be played with friends or solo and encourages creativity and decision-making.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+        
+                <!-- Third Game Card -->
+                <div class="travel__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <article class="travel__card swiper-slide">
+                            <div id="model-containerr">
+                                <model-viewer
+                                    src="./bottle-final.glb"
+                                    alt="A 3D dice"
+                                    auto-rotate
+                                    camera-controls
+                                    shadow-intensity="1"
+                                    environment-image="neutral"
+                                    ar
+                                    style="width: 600px; height: 600px;">
+                                </model-viewer>
+                            </div>
+        
+                            <h2 class="travel__title">SPIN A BOTTLE</h2>
+                            <span class="travel__info">Spin the Bottle, Unveil the Cosmos: Adventure is Just a Twist Away!</span>
+                            <p class="travel__description">
+                                "The Aluminum Bottle Spin Game engages astronauts in microgravity by having them spin a bottle, which stops via a reaction wheel, with a laser pointer selecting the chosen player."
+                            </p>
+                        </article>
+                    </div>
+                </div>
+                <div class="travel__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <article class="travel__card swiper-slide">
+                            <div id="model-containerr">
+                                <model-viewer
+                                    src="./lsar.glb"
+                                    alt="A 3D dice"
+                                    auto-rotate
+                                    camera-controls
+                                    shadow-intensity="1"
+                                    environment-image="neutral"
+                                    ar
+                                    style="width: 600px; height: 600px;">
+                                </model-viewer>
+                            </div>
+        
+                            <h2 class="travel__title">MAG x DART</h2>
+                            <span class="travel__info">"Defy Gravity, Hit the Bullseye: Precision Meets Play in Every Throw!"</span>
+                            <p class="travel__description">
+                                The Magnetic Dart Game, included in the Zero'G'ames kit, offers astronauts a fun activity in microgravity. Players throw magnetic darts at a specially designed board that holds the darts securely upon contact. With various scoring sections, it encourages precision and friendly competition. This game is an engaging way to unwind and connect with fellow astronauts while floating in space!
+                            </p>
+                        </article>
+                    </div>
+                </div>
+
+
+        
+                <!-- Explore Games Button -->
+                <a href="games.html" class="button">Explore Games</a>
+            </div>
+        </section>
+        
+         <img src="images/footer-planet-1.svg" class="floating-image floating-left" alt="Space Object Left">
+         <img src="images/footer-planet-2.svg" class="floating-image floating-right" alt="Space Object Right">
+
+         <!--==================== EXPLORE ====================-->
+         <section class="explore section" id="explore">
+            <div class="explore__container conrainer grid">
+
+               
+
+
+                
+              
+                </div>
+               
+            </div>
+        
+         </section>
+
+         <!--==================== HISTORY ====================-->
+         <section class="history section" id="history">
+            <h2 class="section__title">
+                FUN FACTS<span>ABOUT SPACE</span>
+            </h2>
+            <img src="images/history-planet-1.svg" alt="image" class="history__planet-1">
+            <img src="images/history-planet-2.svg" alt="image" class="history__planet-2">
+            <div class="history__container container grid">
+
+                <article class="history__card">
+                    <img src="images/history-img-1.svg" alt="images" class="history__img">
+                    <p class="history__description">
+                        The International Space Station (ISS) is like a giant, modular LEGO set floating in Earth's orbit! It's been built piece by piece by astronauts from around the world 
+                    </p>
+                </article>
+
+                <article class="history__card">
+                    <img src="images/history-img-2.svg" alt="images" class="history__img">
+                    <p class="history__description">
+                        Since there’s no atmosphere in space, sound has no medium to travel through—so it’s as quiet as it gets!
+                    </p>
+                </article>
+
+                <article class="history__card">
+                    <img src="images/history-img-3.svg" alt="images" class="history__img">
+                    <p class="history__description">
+                        The Apollo Moon landing was made possible by over 400,000 people, each playing a critical role. From engineers to astronauts, teamwork turned a dream into reality.
+                    </p>
+                </article>
+
+            </div>
+         </section>
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section">
+            <h2 class="contact__title">Any Doubts, Clear It</h2> <!-- Changed h9 to h2 -->
+        
+            <div class="contact__container container grid">
+                <form action="" class="contact__form">
+                    <input type="email" placeholder="Question" name="email" autocomplete="email" class="contact__input">
+                    <button type="submit" class="button button__yellow">SUBMIT</button>
+                </form>
+            </div>
+        </section>
+        
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container conatiner grid">
+            <img src="images/footer-planet-1.svg" alt="images" class="footer__planet-1">
+            <img src="images/footer-planet-2.svg" alt="images" class="footer__planet-2">
+
+            <div class="footer__content grid">
+                <ul class="footer__links">
+                    <li>
+                        <a href="#home" class="footer__links">HOME
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#travel" class="footer__links">GAMES</a>
+                    </li>
+                    <li>
+                        <a href="#explore" class="footer__links">FACTS</a>
+                    </li>
+                </ul>
+                <div class="container">
+                    <div id="model-containerr">
+                        <model-viewer
+                        src="./helper.glb"  
+                        alt="A 3D dice"
+                        auto-rotate
+                        camera-controls
+                        shadow-intensity="1"
+                        environment-image="neutral"
+                        ar
+                        style="width: 600px; height: 600px;"> 
+                      </model-viewer>
+                    </div>
+            <div class="about">
+                    <h1>About DarkNova</h1>
+                    <p>This website was created by a group of six enthusiastic Computer Science students from MES College of Engineering Kuttippuram — Adarsh, Hisham, Athul, Ahmed, Mirza, and  Jasir, A, the website developer — as part of our hackathon project. We share a deep fascination with space and technology, which inspired us to design this platform dedicated to exploring the wonders of the universe. Together, we've combined our skills and passion to bring space closer to everyone. We hope this project sparks the same curiosity and excitement about the cosmos that drives us!</p>
+            </div>
+                   
+                </div>
+
+            </div>
+            <span class="footer__copy">
+                &copy;2024 All Rights Reserved By DarkNova
+            </span>
+         </div>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="assest/scrollreveal.min.js"></script>
+
+      <!--=============== SWIPER JS ===============-->
+      <script src="assest/swiper-bundle.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="./three.cjs"></script>
+      <script src="assest/script.js"></script>
+      
+   </body>
+</html>

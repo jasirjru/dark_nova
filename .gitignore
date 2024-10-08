@@ -1,0 +1,94 @@
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# Build outputs
+dist/
+build/
+out/
+bin/
+obj/
+
+# OS-specific files
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# IDEs and editors
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs (e.g. IntelliJ, PyCharm, WebStorm)
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime*
+
+# Python-specific
+__pycache__/
+*.pyc
+*.pyo
+
+# JavaScript/Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+package-lock.json
+
+# Java-specific
+*.class
+*.jar
+*.war
+*.ear
+
+# Java Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Temporary files
+*.swp
+*.swo
+*.tmp
+*.bak
+
+# Compressed files
+*.zip
+*.tar.gz
+*.rar
+
+# Environment variables
+.env
+
+# Large files (optional)
+*.tar
+*.gz
+*.iso
+*.xz
+*.7z
+
+# Git LFS
+*.lfs
+

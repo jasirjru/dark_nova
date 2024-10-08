@@ -1,0 +1,20 @@
+{
+  "name": "space-themed-website-main",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "nothing",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon script.js"
+  },
+  "author": "jasir",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "three": "^0.169.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.169.0"
+  }
+}

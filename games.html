@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="style.css">
+
+      <title>DarkNova - Explore Games</title>
+
+      
+<style>
+
+
+body {
+            background-color: #00011E; /* Fallback color */
+         /* Semi-transparent overlay */
+             /* Optional: to ensure text is legible on a dark background */
+         }
+      .floating-image {
+         position: fixed;
+         width: 200px;
+         height: auto;
+         animation: float 5s ease-in-out infinite;
+       }
+
+       .floating-left {
+         left: -100px;
+         top: 20%;
+       }
+
+       .floating-right {
+         right: -100px;
+         top: 40%;
+       }
+
+       @keyframes float {
+         0% {
+           transform: translateY(0);
+         }
+         50% {
+           transform: translateY(30px);
+         }
+         100% {
+           transform: translateY(0);
+         }
+       }
+       </style>
+   </head>
+   <body>
+      <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="index.html" class="nav__logo"> <!-- Link back to home page -->
+               <img src="images/logo.svg" alt="logo" style="width: 80px; height: 80px;">
+               Dark Nova
+            </a>
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li><a href="index.html#home" class="nav__link">Home</a></li>
+                  <li><a href="index.html#travel" class="nav__link">Games</a></li>
+                  <li><a href="index.html#explore" class="nav__link">Exploration</a></li>
+                  <li><a href="index.html#history" class="nav__link">History</a></li>
+               </ul>
+
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-large-line"></i>
+               </div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle"></div>
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <section class="games section" id="games">
+            <div class="games__container container">
+                  <h2 class="section__title">
+                      GAME <Span>DETAILS</Span>
+                  </h2>
+                  <div class="travel__swiper swiper">
+                     <div class="swiper-wrapper">
+                         <article class="travel__card swiper-slide">
+                             <div id="model">
+                                 <!-- Title for the dice game -->
+                                 <h2 style="font-size: 70px;">MAGNETIC DICE</h2>
+                 
+                                 <div class="cont">
+                                     <!-- 3D model of the dice -->
+                                     <model-viewer
+                                         src="./cube-final.glb"
+                                         alt="A 3D dice"
+                                         auto-rotate
+                                         camera-controls
+                                         shadow-intensity="1"
+                                         environment-image="neutral"
+                                         ar
+                                         scale="1 1 1">
+                                     </model-viewer>
+                 
+                                     <!-- Requirements Section -->
+                                     <div class="req">
+                                         <h1 class="req-title">REQUIREMENTS:</h1>
+                                         <p>1. Storage</p>
+                                         <p>2. Game Board</p>
+                                     </div>
+                                 </div>
+                 
+                                 <!-- How to play section -->
+                                 <div class="how-to-play">
+                                     <span class="travel__info">How To Play:</span>
+                                     <p>1. Roll the dice by giving them a gentle push and a spin.</p>
+                                     <p>2. The magnets will help them stay in place while reaching the magnetic surface of the Zero'G'ames Kit Box.</p>
+                                     <p>3. Use the dice for various games (e.g., board games, dice games) or create your own.</p>
+                                     <p>4. Keep score as per the rules of the chosen game.</p>
+                                 </div>
+                             </div>
+                         </article>
+                     </div>
+                 </div>
+
+
+
+
+
+
+                 <div class="travel__swiper swiper">
+                  <div class="swiper-wrapper">
+                      <article class="travel__card swiper-slide">
+                          <div id="model">
+                              <!-- Title for the dice game -->
+                              <h2 style="font-size: 70px;">SPIN A BOTTLE</h2>
+              
+                              <div class="cont">
+                                  <!-- 3D model of the dice -->
+                                  <model-viewer
+                                      src="./bottle-final-laser.glb"
+                                      alt="A 3D dice"
+                                      auto-rotate
+                                      camera-controls
+                                      shadow-intensity="1"
+                                      environment-image="neutral"
+                                      ar
+                                      scale="1 1 1">
+                                  </model-viewer>
+              
+                                  <!-- Requirements Section -->
+                                  <div class="req">
+                                      <h1 class="req-title">REQUIREMENTS:</h1>
+                                      <p>1. Storage</p>
+                                      <p>2. Battery backup</p>
+                                  </div>
+                              </div>
+              
+                              <!-- How to play section -->
+                              <div class="how-to-play">
+                                  <span class="travel__info">How To Play:</span>
+                                  <p>Set Up: Ensure a clear area and gather all players for the game.</p>
+                                  <p>Spin the Bottle: One player gives the bottle a strong spin to start the game.</p>
+                                  <p>Timer and Stop: A timer activates, randomly expiring within 2 to 3 seconds, after which the reaction wheel stops the bottle.</p>
+                                  <p>Select a Player: A laser pointer activates to select the player the bottle points to, who then completes a challenge or task.</p>
+                                  
+                              </div>
+                          </div>
+                      </article>
+                  </div>
+              </div>
+              
+              <div class="travel__swiper swiper">
+               <div class="swiper-wrapper">
+                   <article class="travel__card swiper-slide">
+                       <div id="model">
+                           <!-- Title for the dice game -->
+                           <h2 style="font-size: 70px;">MAG x DART</h2>
+           
+                           <div class="cont">
+                               <!-- 3D model of the dice -->
+                               <model-viewer
+                                   src="./lsar.glb"
+                                   alt="A 3D dice"
+                                   auto-rotate
+                                   camera-controls
+                                   shadow-intensity="1"
+                                   environment-image="neutral"
+                                   ar
+                                   scale="1 1 1">
+                               </model-viewer>
+           
+                               <!-- Requirements Section -->
+                               <div class="req">
+                                   <h1 class="req-title">REQUIREMENTS:</h1>
+                                   <p>1. Storage</p>
+                                   <p>2. Magnetic Board</p>
+                               </div>
+                           </div>
+           
+                           <!-- How to play section -->
+                           <div class="how-to-play">
+                               <span class="travel__info">How To Play:</span>
+                               <p>1. Players throw magnetic darts that travels a short distance away from the target.</p>
+                               <p>2.Darts stick to the board,aiming for various scoring sections.</p>
+                            
+                           </div>
+                       </div>
+                   </article>
+               </div>
+           </div>
+
+           
+                 
+            
+         </section>
+      </main>
+
+      <img src="images/history-planet-1.svg" class="floating-image floating-left" alt="Space Object Left">
+      <img src="images/history-planet-2.svg" class="floating-image floating-right" alt="Space Object Right">
+
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <span class="footer__copy">&copy;2024 All Rights Reserved by DarkNova</span>
+         </div>
+      </footer>
+
+      <!--=============== SCRIPTS ===============-->
+      <script src="assets/script.js"></script>
+   </body>
+</html>
